@@ -2,7 +2,7 @@ from interpreter import draw
 from chessPictures import *
 from picture import *
 
-# Definir las imágenes de las piezas y los cuadros
+# Definir las imagenes de las piezas y los cuadros
 pieces = [rock, knight, bishop, king, queen, bishop, knight, rock]
 pawn = Picture(PAWN)
 square = Picture(SQUARE)
@@ -33,7 +33,7 @@ for i in range(1, 8):
 
 row_P_negative = row_P.negative()
 
-# Construir una fila vacía de cuadros
+# Construir una fila vacia de cuadros
 row_Empty = square
 
 for i in range(1, 8):
@@ -45,7 +45,7 @@ for i in range(1, 8):
 
 row_Empty_negative = row_Empty.negative()
 
-# Construir una fila con bloques alternados de cuadros vacíos y negativos
+# Construir una fila con bloques alternados de cuadros vacios y negativos
 row_Block = row_Empty
 
 for i in range(1, 4):
